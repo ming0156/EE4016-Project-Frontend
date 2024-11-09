@@ -1,0 +1,69 @@
+{
+    "name": "portal_frontend",
+    "version": "1.0.3",
+    "description": "Portal Frontend of the Project: Green Machine (Green $)",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.4.1",
+        "@emotion/styled": "^11.3.0",
+        "@mui/icons-material": "^5.0.1",
+        "@mui/lab": "^5.0.0-alpha.48",
+        "@mui/material": "^5.0.1",
+        "@mui/styles": "^5.0.1",
+        "axios": "^0.21.1",
+        "clsx": "^1.1.1",
+        "date-fns": "^2.23.0",
+        "file-saver": "^2.0.5",
+        "formik": "^2.2.9",
+        "framer-motion": "^4.1.17",
+        "i18next": "^21.6.14",
+        "jss-rtl": "^0.3.0",
+        "jwt-decode": "^3.1.2",
+        "leaflet": "^1.7.1",
+        "leaflet-contextmenu": "^1.4.0",
+        "leaflet.markercluster": "^1.5.3",
+        "lodash": "^4.17.21",
+        "moment": "^2.29.1",
+        "mui-datatables": "^4.0.0",
+        "react": "^17.0.2",
+        "react-beautiful-dnd": "^13.1.0",
+        "react-datepicker": "^4.16.0",
+        "react-dom": "^17.0.2",
+        "react-dropzone": "^12.0.4",
+        "react-funnel-pipeline": "^0.1.1",
+        "react-i18next": "^11.15.7",
+        "react-intl": "^5.20.10",
+        "react-jss": "^10.9.0",
+        "react-leaflet": "^3.2.5",
+        "react-leaflet-markercluster": "^3.0.0-rc1",
+        "react-loading-skeleton": "^2.2.0",
+        "react-perfect-scrollbar": "^1.5.8",
+        "react-redux": "^7.2.4",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "^5.0.1",
+        "react-select": "^5.8.0",
+        "redux": "^4.1.1",
+        "sass": "^1.49.8",
+        "uuid": "^8.3.2",
+        "yup": "^0.32.9"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app",
+        "rules": {
+            "default-case": 0,
+            "no-sequences": 0,
+            "react-hooks/exhaustive-deps": 0
+        }
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+    ]
+}
