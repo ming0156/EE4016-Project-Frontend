@@ -1,0 +1,81 @@
+const en = {
+    Lang: 'en',
+    Edit: 'Edit',
+    Create: 'Create',
+    Logout: 'Logout',
+    Global: {
+        Home: 'Home',
+        NO_RECORD: 'No record',
+        Cancel: 'CANCEL',
+        Clear: 'CLEAR',
+        Submit: 'SUBMIT',
+        Reset: 'RESET',
+        Edit: 'Edit ',
+        Create: 'Create ',
+        DeleteReminder: 'Are you sure to delete record ?',
+        User: 'User',
+        Upload: 'UPLOAD',
+    },
+    Muidatatable: {
+        body: {
+            noMatch: 'Sorry, no matching records found',
+            toolTip: 'Sort',
+        },
+        pagination: {
+            next: 'Next Page',
+            previous: 'Previous Page',
+            rowsPerPage: 'Rows per page:',
+            displayRows: 'of',
+        },
+        toolbar: {
+            search: 'Search',
+            downloadCsv: 'Download CSV',
+            print: 'Print',
+            viewColumns: 'View Columns',
+            filterTable: 'Filter Table',
+        },
+        filter: {
+            all: 'All',
+            title: 'FILTERS',
+            reset: 'RESET',
+        },
+    },
+    Member: {
+        Title: 'Home',
+        Download_Member: 'Download Member CSV',
+    },
+    Gift: {
+        Title: 'Record',
+        Name: 'Gift Name',
+        Name_tc: 'Gift Name (TC)',
+        Name_sc: 'Gift Name (SC)',
+        Name_en: 'Gift Name (ENG)',
+        greenScore: 'greenScore',
+        Edit_gift: 'Edit Gift',
+        Create_gift: 'Create Gift',
+        Gift_ID: 'Gift ID',
+        Description: 'Description',
+        Remarks: 'Remarks',
+        Created_at: 'Created at',
+        Updated_at: 'Updated at',
+        
+        LocationID: 'Location ID',
+        Shop_name: 'Shop Name',
+        Type: 'Type',
+        Display: 'Display',
+
+        Import_Gift_CSV: 'Import Gift CSV',
+        Drop_file_content_1: 'Drop the file here ...',
+        Drop_file_content_2: 'Drop the file here, or click to select file.',
+        Export_Gift_CSV: 'Export Gift CSV',
+        StartDate: 'Start Date',
+        EndDate: 'End Date',
+    },
+    Snackbar: {
+        InvalidLogin: 'Invalid username or password',
+        SessionExpired: 'Your session has expired, please login again',
+        NoDateRangeRecord: 'No record found, please select a different date range and try again',
+    },
+};
+
+export default en;

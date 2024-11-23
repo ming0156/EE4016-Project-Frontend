@@ -1,7 +1,7 @@
 {
-    "name": "portal_frontend",
-    "version": "1.0.3",
-    "description": "Portal Frontend of the Project: Green Machine (Green $)",
+    "name": "frontend",
+    "version": "1.0.0",
+    "description": "Frontend of the EE4016 Project",
     "private": true,
     "dependencies": {
         "@emotion/react": "^11.4.1",
