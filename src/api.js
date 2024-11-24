@@ -10,9 +10,9 @@ const MenuItem = {
 const Gift = {
     // create_one: async (giftId, description, remarks, display_name_zh_hant, display_name_zh_hans, display_name_en, greenScore) =>
     //     axios.post(base + '/gift/', { giftId, description, remarks, display_name_zh_hant, display_name_zh_hans, display_name_en, greenScore }),
-    
+
     create_one_gift: async (giftId, display_name_en, display_name_zh_hant, display_name_zh_hans, locationId, shop_name, type, display) =>
-        axios.post(base + '/gift/', { giftId, display_name_en, display_name_zh_hant, display_name_zh_hans, locationId, shop_name, type, display}),
+        axios.post(base + '/gift/', { giftId, display_name_en, display_name_zh_hant, display_name_zh_hans, locationId, shop_name, type, display }),
 
     create_one_coupon: async (giftId, display_name_en, display_name_zh_hant, display_name_zh_hans, coupon_code, unit_rate, redemption_start_date) =>
         axios.post(base + '/gift/', { giftId, display_name_en, display_name_zh_hant, display_name_zh_hans, coupon_code, unit_rate, redemption_start_date }),
@@ -44,15 +44,26 @@ const Gift = {
     },
 };
 
-const Member = {
-    getCount: async () => axios.get(base + '/member/count'),
-    export_csv: async () => axios.get(base + '/member/csv', { responseType: 'blob' }),
-    findMemberDuplicate: async () => axios.get(base + '/member/userDuplicate'),
-    resolveDuplicate: async (body) => axios.post(base + '/member/resolveUserDuplicate', { body }),
+const Home = {
+    import_music_mp3: async (file) => {
+        let formData = new FormData();
+        formData.append('file', file, 'audio.mp3');
+        return axios.post(
+            base + '/home/importmp3',
+            formData,
+            {
+                headers: {
+                    Accept: 'audio/mpeg',
+                    'Content-Type': 'audio/mpeg'
+                }
+            }
+        );
+    },
+
 };
 
 export default {
     MenuItem,
     Gift,
-    Member,
+    Home,
 };
